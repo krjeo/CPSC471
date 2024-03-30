@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Universal Library</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static 'library/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'library/favicon.ico' %}" alt="Logo">
+        <h1>Universal Library</h1>
+        <button>Login</button>
+    </header>
+
+    <div class="category">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'catalog' %}">Catalog</a>
+        <a href="{% url 'roomnseat' %}">Room&Seat</a>
+        <a href="{% url 'event' %}">Event&Programs</a>
+    </div>
+
+    <main>
+        <h2>Put your library introduction here</h2>
+    </main>
+</body>
+
+</html>
